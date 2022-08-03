@@ -4,6 +4,8 @@
     --color-yellow: #CD853F;
     --color-purple: #4409BF;
     --color-white: #fff;
+    --color-transparent: transparent;
+    --color-grey-light: rgba(255, 255, 255, 0.5);
 }
 
 * {
@@ -18,6 +20,15 @@ body {
     color: var(--color-white);
 }
 
+input,
+select {
+    background-color: var(--color-transparent);
+    border: none;
+    color: var(--color-grey-light);
+    font-size: 12px;
+    text-align: right;
+}
+
 .container {
     max-width: 1140px;
     /* top right bottom left */
@@ -27,30 +38,119 @@ body {
 }
 
 main .row {
-    display: flex;
-    justify-content: space-between;
+    height: 45vh;
+}
+
+.row .col-1,
+.row .col-2 {
+    width: 45%;
 }
 
 .row .col-1 {
-    max-width: 532px;
+    float: left;
 }
 
-.text-box > .heading-main {
+.row .col-2 {
+    float: right;
+}
+
+footer {
+    clear: both;
+}
+
+.form-box {
+    width: 100%;
+}
+
+.text-box>.heading-main {
     font-size: 36px;
     line-height: 50px;
 }
 
-.text-box > .paragraph {
+.text-box>.paragraph {
     font-size: 16px;
     line-height: 24px;
     max-width: 442px;
 }
 
-.text-box > .heading-main .highlighted {
+.text-box>.heading-main .highlighted {
     color: var(--color-yellow);
 }
 
-.form-box > .heading-sub {
+.form-box>.heading-sub {
     font-size: 24px;
     color: var(--color-yellow);
+}
+
+.coming-soon-box {
+    margin: 100px 0 20px 0;
+}
+
+.coming-soon-box>p.paragraph {
+    font-size: 12px;
+    color: var(--color-grey-light);
+}
+
+.coming-soon-box>p.paragraph>span.bold {
+    font-weight: 700;
+    font-size: 16px;
+    color: var(--color-white);
+}
+
+.coming-soon-box p {
+    font-size: 16px;
+}
+
+.copyright {
+    text-align: center;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.input-container,
+.select-container {
+    margin-bottom: 15px;
+}
+
+.form-box .input-group {
+    border: 1px solid var(--color-grey-light);
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 15px 20px;
+}
+
+.form-box .input-group:active {
+    border: 1px solid var(--color-purple);
+}
+
+.form-box .input-group small {
+    width: 120px;
+    color: var(--color-grey-light);
+    font-size: 12px;
+}
+
+.form-box .input-group input {
+    width: 200px;
+
+}
+
+.form-box .input-group input:focus {
+    outline: none;
+}
+
+.btn-container {
+    text-align: center;
+}
+
+.btn-container>.btn {
+    padding: 12px 15px;
+    border: 2px solid var(--color-purple);
+    border-radius: 100px;
+    color: white;
+    background-image: linear-gradient(116deg, #634BBC
+    5%, var(--color-purple));
 }
