@@ -107,10 +107,11 @@ border: 1px solid var(--color-purple);
 
 }
 .form-box .input-output small{
-    width: 200px;
+    width: 350px;
     color: var(--color-grey-light);
     font-size: 12px;
 }
+
 .form-box .input-output input{
 width: 200px;
 background-color: transparent;
