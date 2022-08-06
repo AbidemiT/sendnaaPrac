@@ -20,14 +20,19 @@
     position: absolute;
     right: 0;
 } */
-body{
+
+
+/* body{
     background-color: black;
-}
-.laptop-container{
+    
+} */
+/* .laptop-container{
     width: 800px;
     height: 300px;
     margin: 100px;
     position: absolute;
+    
+    
 }
 .particle-one{
     width: 50px;
@@ -47,8 +52,83 @@ body{
     width: 200px;
     height: 10px;
     position: relative;
-    left: 650px;
-    bottom: 10px;
+    left: 640px;
+    bottom: 180px;
+    
+}
+.form-container{
+width: 350px;
+height: 200%;
+background-color: white;
+margin: 40px 100px ;
+
+}
+.section-container{
+    background-color: black;
+}
+.form-container .form-box{
+    width: 350px;
+
+}
+.form-box .form-cont{
+    width: 350px;
+    height: 80px;
+   
+}
+.form-box .form-cont label{
+    color: blue;
+    font-size: 20px;
+    display: block;
+}
+.form-cont  .input-output{
+    display: flex;
+    border: 2px solid black;
+    margin: 12px 0;
+
+
+}
+.form-cont .input-output small{
+    font-size: 17px;
+}
+.input-output input{
+    padding-left: 40px;
+    width: 150px;
+    margin: 0px 19px;
+    border: none;
+    text-align: right;
+
+}
+.container{
+    background-color: black;
+} */
+.container{
+    background-color: black;
+    width: 800px;
+    position: relative;
+    height: 500px;
+    margin: 40px;
+}
+.laptop{
+    text-align: center;
+    position: relative;
+    top: 50px;
+    
+}
+.particle-one{
+position: absolute;
+left: 60px;
+top: 60px;
+}
+.particle-two{
+    position: absolute;
+    top: 370px;
+    left: 50px;
+}
+.particle-three{
+    /* text-align:right ; */
+    position: absolute;
+    right: 50px;
     
 }
 
+    
